@@ -1,0 +1,176 @@
+body {
+  background: #e3e3e3;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 20px 0 0 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header-p {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.tasks-list {
+  margin-bottom: 20px;
+  width: 100%;
+  background: white;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.tasks-list-cont {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-list-empty {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.tasks-list-task {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.tasks-list-task-name {
+  margin-left: 1%;
+  width: 91.5%;
+}
+
+.done, .delete {
+  width: 35px;
+  height: 35px;
+  background: rgb(224, 224, 224);
+  border: none;
+  border-radius: 5px;
+}
+
+.done {
+  color: green;
+  margin-right: 5px;
+  transition: all 0.3s;
+}
+.done:hover {
+  filter: brightness(90%);
+}
+.done:focus {
+  filter: brightness(90%);
+}
+
+.delete {
+  color: red;
+  transition: all 0.3s;
+}
+.delete:hover {
+  filter: brightness(90%);
+}
+
+.new-tasks {
+  height: 185px;
+  background: white;
+}
+
+.new-tasks-header {
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.new-tasks-header h2 {
+  margin-left: 1%;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.new-tasks-main {
+  margin-top: 20px;
+  margin-left: 1%;
+}
+
+.new-tasks-main input{
+  width: 98%;
+  height: 30px;
+}
+.new-tasks-main p{
+  margin: 5px 0 10px;
+  font-size: 13px;
+  font-weight: 100;
+  color: rgb(17, 17, 17);
+}
+.new-tasks-main button {
+  background: rgb(0, 72, 255);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.new-tasks-main button:hover {
+  filter: brightness(140%);
+}
+
+.bg-grey-done {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 1%;
+  width: 91.5%;
+}
+
+.contain-button-delete-all {
+  display: flex;
+  margin-top: 20px;
+  justify-content: end;
+}
+
+.button-delete-all {
+  border: none;
+  color: white;
+  background: grey;
+  padding: 12px;
+  border-radius: 5px;
+}
+.button-delete-all:hover {
+  filter: brightness(90%);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .new-tasks {
+    height: 200px;
+  }
+
+  .new-tasks-header h2 {
+    margin-left: 2%;
+  }
+  .new-tasks-main {
+    margin-left: 2%;
+  }
+
+  .new-tasks-main input {
+    width: 95%;
+  }
+}
